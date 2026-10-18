@@ -1,0 +1,5 @@
+# Gunakan wheel CPU untuk menghindari dependency CUDA pada server Linux.
+--extra-index-url https://download.pytorch.org/whl/cpu
+torch==2.14.1+cpu; sys_platform == "linux"
+# Instal project beserta dependency dari pyproject.toml.
+-e .
