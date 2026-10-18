@@ -47,7 +47,7 @@ with st.sidebar:
     st.subheader("Tentang Proyek Ini")
     st.write("Satu masukan dalam satu waktu. Tiga label sentimen: positif, netral, dan negatif.")
     st.caption(
-        "Model dijalankan secara lokal. Komentar YouTube menggunakan kunci YouTube Data API Anda."
+        "Model dijalankan secara lokal. Komentar YouTube menggunakan YouTube Data API."
     )
     st.caption("Sumber Berita: Kompas, Antara, dan Detik. YouTube: transkrip atau komentar publik.")
     if st.button("Cek Koneksi API"):
@@ -72,7 +72,7 @@ if mode == "YouTube URL":
     youtube_mode = youtube_choice.lower()
     if youtube_mode == "comments":
         max_comments = st.slider("Maximum recent comments", 10, 100, 50, step=10)
-        st.caption("Public top-level comments only; replies are excluded. Start with 10–50.")
+        st.caption("Hanya komentar Publik top-level; replies tidak termasuk. Mulai dengan 10-50.")
 if mode == "Text":
     st.button(
         "Load sample text",
